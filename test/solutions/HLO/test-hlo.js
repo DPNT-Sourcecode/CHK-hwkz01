@@ -10,4 +10,10 @@ describe('Greet tests', function() {
 	    const result = hello()
         assert.strictEqual(result,"Hello, World")
 	});
+
+
+    it('Return should be name with no name', ()=> {
+	    const result = hello("Ajay")
+        assert.strictEqual(result,"Hello, Ajay")
+	});
 });
