@@ -7,8 +7,13 @@ const checkout = require('../../../lib/solutions/CHK/checkout');
 
 describe('Checkout tests', ()=> {
 	it('Invalid Input item not in stock', ()=> {
-	    const result = checkout("AABE")
+	    const result = checkout("AABQ")
         assert.strictEqual(result,-1)
+	});
+
+    it('Exchange for Item', ()=> {
+	    const result = checkout("EEB")
+        assert.strictEqual(result, 80)
 	});
 
     it('Invalid Not a string', ()=> {
