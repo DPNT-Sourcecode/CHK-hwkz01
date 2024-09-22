@@ -5,7 +5,7 @@ var assert = require('assert');
 const checkout = require('../../../lib/solutions/CHK/checkout');
 
 
-describe('Greet tests', ()=> {
+describe('Checkout tests', ()=> {
 	it('Invalid Input', ()=> {
 	    const result = checkout("AABE")
         assert.strictEqual(result,-1)
