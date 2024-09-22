@@ -14,7 +14,7 @@ describe('Checkout tests', ()=> {
 
     it('Simple String no promotions', ()=> {
 	    const result = checkout("ABC")
-        assert.strictEqual(result,80)
+        assert.strictEqual(result,100)
 	});
 
     it('String with promotions', ()=> {
@@ -23,3 +23,4 @@ describe('Checkout tests', ()=> {
 	});
 
 });
+
