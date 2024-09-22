@@ -6,14 +6,20 @@ const checkout = require('../../../lib/solutions/CHK/checkout');
 
 
 describe('Greet tests', ()=> {
-	it('Return should be World with no name', ()=> {
-	    const result = hello()
-        assert.strictEqual(result,"Hello, World!")
+	it('Invalid Input', ()=> {
+	    const result = checkout("AABE")
+        assert.strictEqual(result,-1)
 	});
 
 
-    it('Return should be name with no name', ()=> {
-	    const result = hello("Ajay")
-        assert.strictEqual(result,"Hello, Ajay!")
+    it('Simple String no promotions', ()=> {
+	    const result = checkout("ABC")
+        assert.strictEqual(result,80)
 	});
+
+    it('String with promotions', ()=> {
+	    const result = checkout("AAAB")
+        assert.strictEqual(result,160)
+	});
+
 });
