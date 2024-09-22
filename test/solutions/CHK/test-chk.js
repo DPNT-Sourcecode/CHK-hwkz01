@@ -28,5 +28,3 @@ describe('Checkout tests', ()=> {
 	});
 
 });
-
-
