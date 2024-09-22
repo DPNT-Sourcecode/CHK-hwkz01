@@ -16,9 +16,14 @@ describe('Checkout tests', ()=> {
         assert.strictEqual(result, 80)
 	});
 
-    it('Exchange for Item', ()=> {
+    it('Exchange for Item with promotion', ()=> {
 	    const result = checkout("EEBBB")
         assert.strictEqual(result, 125)
+	});
+
+    it('Exchange for Item on oneself', ()=> {
+	    const result = checkout("FFF")
+        assert.strictEqual(result, 20)
 	});
 
     it('Invalid Not a string', ()=> {
@@ -37,10 +42,11 @@ describe('Checkout tests', ()=> {
         assert.strictEqual(result,160)
 	});
 
-    it('String with multiple promotionsof same level', ()=> {
+    it('String with multiple promotions of same level', ()=> {
 	    const result = checkout("AAAAAAAAABEE")
         assert.strictEqual(result,460)
 	});
 
 
 });
+
