@@ -11,9 +11,14 @@ describe('Checkout tests', ()=> {
         assert.strictEqual(result,-1)
 	});
 
-	it('Task 4 adding alphabet post F', ()=> {
-	    const result = checkout("ABBCEEQZY")
-        assert.strictEqual(result,270)
+	it('Task 5 adding alphabet post 3 Ys', ()=> {
+	    const result = checkout("YYY")
+        assert.strictEqual(result,45)
+	});
+
+	it('Task 5 adding alphabet post 3 Ys X', ()=> {
+	    const result = checkout("YYY")
+        assert.strictEqual(result,45)
 	});
 
     it('Exchange for Item', ()=> {
