@@ -11,6 +11,11 @@ describe('Checkout tests', ()=> {
         assert.strictEqual(result,-1)
 	});
 
+	it('Task 4 adding alphabet post F', ()=> {
+	    const result = checkout("ABBCEEQZY")
+        assert.strictEqual(result,270)
+	});
+
     it('Exchange for Item', ()=> {
 	    const result = checkout("EEB")
         assert.strictEqual(result, 80)
@@ -21,7 +26,7 @@ describe('Checkout tests', ()=> {
         assert.strictEqual(result, 125)
 	});
 
-    it('Exchange for Item on oneself', ()=> {
+    it('Exchange for Item on oneself multiple', ()=> {
 	    const result = checkout("FFFF")
         assert.strictEqual(result, 30)
 	});
