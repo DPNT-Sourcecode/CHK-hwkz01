@@ -6,8 +6,13 @@ const checkout = require('../../../lib/solutions/CHK/checkout');
 
 
 describe('Checkout tests', ()=> {
-	it('Invalid Input', ()=> {
+	it('Invalid Input item not in stock', ()=> {
 	    const result = checkout("AABE")
+        assert.strictEqual(result,-1)
+	});
+
+    it('Invalid Not a string', ()=> {
+	    const result = checkout("-1")
         assert.strictEqual(result,-1)
 	});
 
@@ -23,4 +28,5 @@ describe('Checkout tests', ()=> {
 	});
 
 });
+
 
