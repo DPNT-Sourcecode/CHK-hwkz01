@@ -7,7 +7,7 @@ const checkout = require('../../../lib/solutions/CHK/checkout');
 
 describe('Checkout tests', ()=> {
 	it('Invalid Input item not in stock', ()=> {
-	    const result = checkout("AABQ")
+	    const result = checkout("AABa")
         assert.strictEqual(result,-1)
 	});
 
@@ -59,3 +59,4 @@ describe('Checkout tests', ()=> {
 
 
 });
+
