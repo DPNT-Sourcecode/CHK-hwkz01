@@ -22,6 +22,11 @@ describe('Checkout tests', ()=> {
 	});
 
     it('Exchange for Item on oneself', ()=> {
+	    const result = checkout("FFFF")
+        assert.strictEqual(result, 30)
+	});
+
+    it('Exchange for Item on oneself', ()=> {
 	    const result = checkout("FFF")
         assert.strictEqual(result, 20)
 	});
