@@ -59,4 +59,3 @@ describe('Checkout tests', ()=> {
 
 
 });
-
