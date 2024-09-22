@@ -17,8 +17,8 @@ describe('Checkout tests', ()=> {
 	});
 
 	it('Task 5 adding alphabet post 3 Ys X', ()=> {
-	    const result = checkout("YYY")
-        assert.strictEqual(result,45)
+	    const result = checkout("YYXY")
+        assert.strictEqual(result,62)
 	});
 
     it('Exchange for Item', ()=> {
@@ -64,3 +64,4 @@ describe('Checkout tests', ()=> {
 
 
 });
+
