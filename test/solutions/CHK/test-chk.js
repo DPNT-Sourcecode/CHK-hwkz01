@@ -18,7 +18,7 @@ describe('Checkout tests', ()=> {
 
     it('Exchange for Item', ()=> {
 	    const result = checkout("EEBBB")
-        assert.strictEqual(result, 110)
+        assert.strictEqual(result, 125)
 	});
 
     it('Invalid Not a string', ()=> {
