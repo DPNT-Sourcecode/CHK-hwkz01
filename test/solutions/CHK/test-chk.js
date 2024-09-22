@@ -37,4 +37,10 @@ describe('Checkout tests', ()=> {
         assert.strictEqual(result,160)
 	});
 
+    it('String with multiple promotionsof same level', ()=> {
+	    const result = checkout("AAAAAAAAABEE")
+        assert.strictEqual(result,460)
+	});
+
+
 });
