@@ -16,6 +16,11 @@ describe('Checkout tests', ()=> {
         assert.strictEqual(result, 80)
 	});
 
+    it('Exchange for Item', ()=> {
+	    const result = checkout("EEBBB")
+        assert.strictEqual(result, 110)
+	});
+
     it('Invalid Not a string', ()=> {
 	    const result = checkout("-1")
         assert.strictEqual(result,-1)
